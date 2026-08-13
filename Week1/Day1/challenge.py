@@ -18,7 +18,6 @@ elif len(string) > 10:
 else:
     print("Perfect string")
 
-string = 'banana'
 
 print(string[0], string[-1])
 

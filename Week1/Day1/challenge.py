@@ -10,13 +10,17 @@
 # Using a for loop, construct and print the string character by character. Start with the first character, then the first two characters, and so on, until the entire string is printed.
 
 string = input("Tell me a word: ")
-string = 'banana'
+
 if len(string) < 10:
     print("String not long enough.")
 elif len(string) > 10:
     print("String too long.")
 else:
     print("Perfect string")
+
+string = 'banana'
+
+print(string[0], string[-1])
 
 for i in range(1, len(string) + 1):
     print(string[:i]) 

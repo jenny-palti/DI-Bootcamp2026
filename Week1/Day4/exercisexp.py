@@ -34,3 +34,11 @@ favorite_book(title)
 # Step 3: Call the Function
 # Call the describe_city() function with different city and country combinations.
 # Try calling it with and without providing the country argument to see the default value in action.
+def describe_city(city, country="Unknown"):
+    print(f"{city} is in {country}.")
+
+
+describe_city("Tokyo", "Japan")
+describe_city("Paris", "France")
+describe_city("Jerusalem", "Israel")
+describe_city("Atlantis")  # Uses the default country

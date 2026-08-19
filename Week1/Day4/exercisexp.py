@@ -90,3 +90,110 @@ def compare_number(my_number):
 
 
 compare_number(50)
+
+# Step 1: Define a Function with Parameters
+# Define a function called make_shirt().
+# This function should accept two parameters: size and text.
+
+# Step 2: Print a Summary Message
+# Set up the function to display a sentence summarizing the shirt’s size and message.
+
+# Step 3: Call the Function
+
+# Step 4: Modify the Function with Default Values
+# Modify the make_shirt() function so that size has a default value of “large” and text has a default value of “I love Python”.
+
+# Step 5: Call the Function with Default and Custom Values
+# Call make_shirt() to make a large shirt with the default message.
+# Call make_shirt() to make a medium shirt with the default message.
+# Call make_shirt() to make a shirt of any size with a different message.
+# Step 1, 2, and 4: Define the function and print a summary
+
+def make_shirt(size="large", text="I love Python"):
+    print(f"The size of the shirt is {size} and the text is {text}")
+
+
+# Step 5: Large shirt with the default message
+make_shirt()
+
+# Step 5: Medium shirt with the default message
+make_shirt("medium")
+
+# Step 5: Small shirt with a different message
+make_shirt("small", "Coding is fun!")
+
+# Step 1: Create a List of Magician Names
+# Create a list called magician_names with the given names:
+# ['Harry Houdini', 'David Blaine', 'Criss Angel']
+
+# Step 2: Create a Function to Display Magicians
+# Create a function called show_magicians() that takes the magician_names list as a parameter.
+# Inside the function, iterate through the list and print each magician’s name.
+
+# Step 3: Create a Function to Modify the List
+# Create a function called make_great() that takes the magician_names list as a parameter.
+# Inside the function, use a for loop to iterate through the list and add “the Great” before each magician’s name.
+
+# Step 4: Call the Functions
+# Call make_great() to modify the list.
+# Call show_magicians() to display the modified list.
+
+magician_names = ["Harry Houdini", "David Blaine", "Criss Angel"]
+
+
+def show_magicians(magician_names):
+    for name in magician_names:
+        print(name)
+
+
+def make_great(magician_names):
+    for index in range(len(magician_names)):
+        magician_names[index] = magician_names[index] + " the Great"
+
+
+make_great(magician_names)
+show_magicians(magician_names)
+
+# Step 1: Create the get_random_temp() Function
+# Create a function called get_random_temp() that returns a random integer between -10 and 40 degrees Celsius.
+
+# Step 2: Create the main() Function
+# Create a function called main(). Inside this function:
+# Call get_random_temp() to get a random temperature.
+# Store the temperature in a variable and print a friendly message like:
+# “The temperature right now is 32 degrees Celsius.”
+
+# Step 3: Provide Temperature-Based Advice
+# Inside main(), provide advice based on the temperature:
+# Below 0°C: e.g., “Brrr, that’s freezing! Wear some extra layers today.”
+# Between 0°C and 16°C: e.g., “Quite chilly! Don’t forget your coat.”
+# Between 16°C and 23°C: e.g., “Nice weather.”
+# Between 24°C and 32°C: e.g., “A bit warm, stay hydrated.”
+# Between 32°C and 40°C: e.g., “It’s really hot! Stay cool.”
+
+import random
+
+
+def get_random_temp():
+    random_temp = random.randint(-10, 40)
+    return random_temp
+
+
+def main():
+    temperature = get_random_temp()
+
+    print(f"The temperature right now is {temperature} degrees Celsius.")
+
+    if temperature < 0:
+        print("Brrr, that's freezing! Wear some extra layers today.")
+    elif temperature < 16:
+        print("Quite chilly! Don't forget your coat.")
+    elif temperature < 24:
+        print("Nice weather.")
+    elif temperature < 32:
+        print("A bit warm, stay hydrated.")
+    else:
+        print("It's really hot! Stay cool.")
+
+
+main()
